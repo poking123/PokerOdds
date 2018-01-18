@@ -1,0 +1,118 @@
+<!DOCTYPE HTML5>
+
+<html>
+<head>
+    <link type="text/css" rel=stylesheet href=../css/poker.css>
+    
+    <script src=../js/card.js></script>
+    <script src=../js/deck.js></script>
+    <script src=../js/player.js></script>
+    <script src=../js/poker.js></script>
+    <script src=../js/click.js></script>
+</head>
+
+<body>
+    <main>
+        <div class="card-wrapper">
+            <div class=spades>
+            <img id=AS onClick="cardKeeper.moveCard(this.id)" src=../images/AS.jpg height=55px width=40px alt="Ace of Spades">
+            <img id=2S onClick="cardKeeper.moveCard(this.id)" src=../images/2S.jpg height=55px width=40px alt="Two of Spades">
+            <img id=3S onClick="cardKeeper.moveCard(this.id)" src=../images/3S.jpg height=55px width=40px alt="Three of Spades">
+            <img id=4S onClick="cardKeeper.moveCard(this.id)" src=../images/4S.jpg height=55px width=40px alt="Four of Spades">
+            <img id=5S onClick="cardKeeper.moveCard(this.id)" src=../images/5S.jpg height=55px width=40px alt="Five of Spades">
+            <img id=6S onClick="cardKeeper.moveCard(this.id)" src=../images/6S.jpg height=55px width=40px alt="Six of Spades">
+            <img id=7S onClick="cardKeeper.moveCard(this.id)" src=../images/7S.jpg height=55px width=40px alt="Seven of Spades">
+            <img id=8S onClick="cardKeeper.moveCard(this.id)" src=../images/8S.jpg height=55px width=40px alt="Eight of Spades">
+            <img id=9S onClick="cardKeeper.moveCard(this.id)" src=../images/9S.jpg height=55px width=40px alt="Nine of Spades">
+            <img id=TS onClick="cardKeeper.moveCard(this.id)" src=../images/TS.jpg height=55px width=40px alt="Ten of Spades">
+            <img id=JS onClick="cardKeeper.moveCard(this.id)" src=../images/JS.jpg height=55px width=40px alt="Jack of Spades">
+            <img id=QS onClick="cardKeeper.moveCard(this.id)" src=../images/QS.jpg height=55px width=40px alt="Queen of Spades">
+            <img id=KS onClick="cardKeeper.moveCard(this.id)" src=../images/KS.jpg height=55px width=40px alt="King of Spades">
+            </div>
+            <div class=diamonds>
+            <img id=AD onClick="cardKeeper.moveCard(this.id)" src=../images/AD.jpg height=55px width=40px alt="Ace of Diamonds">
+            <img id=2D onClick="cardKeeper.moveCard(this.id)" src=../images/2D.jpg height=55px width=40px alt="Two of Diamonds">
+            <img id=3D onClick="cardKeeper.moveCard(this.id)" src=../images/3D.jpg height=55px width=40px alt="Three of Diamonds">
+            <img id=4D onClick="cardKeeper.moveCard(this.id)" src=../images/4D.jpg height=55px width=40px alt="Four of Diamonds">
+            <img id=5D onClick="cardKeeper.moveCard(this.id)" src=../images/5D.jpg height=55px width=40px alt="Five of Diamonds">
+            <img id=6D onClick="cardKeeper.moveCard(this.id)" src=../images/6D.jpg height=55px width=40px alt="Six of Diamonds">
+            <img id=7D onClick="cardKeeper.moveCard(this.id)" src=../images/7D.jpg height=55px width=40px alt="Seven of Diamonds">
+            <img id=8D onClick="cardKeeper.moveCard(this.id)" src=../images/8D.jpg height=55px width=40px alt="Eight of Diamonds">
+            <img id=9D onClick="cardKeeper.moveCard(this.id)" src=../images/9D.jpg height=55px width=40px alt="Nine of Diamonds">
+            <img id=TD onClick="cardKeeper.moveCard(this.id)" src=../images/TD.jpg height=55px width=40px alt="Ten of Diamonds">
+            <img id=JD onClick="cardKeeper.moveCard(this.id)" src=../images/JD.jpg height=55px width=40px alt="Jack of Diamonds">
+            <img id=QD onClick="cardKeeper.moveCard(this.id)" src=../images/QD.jpg height=55px width=40px alt="Queen of Diamonds">
+            <img id=KD onClick="cardKeeper.moveCard(this.id)" src=../images/KD.jpg height=55px width=40px alt="King of Diamonds">
+            </div>
+            <div class=hearts>
+            <img id=AH onClick="cardKeeper.moveCard(this.id)" src=../images/AH.jpg height=55px width=40px alt="Ace of Hearts">
+            <img id=2H onClick="cardKeeper.moveCard(this.id)" src=../images/2H.jpg height=55px width=40px alt="Two of Hearts">
+            <img id=3H onClick="cardKeeper.moveCard(this.id)" src=../images/3H.jpg height=55px width=40px alt="Three of Hearts">
+            <img id=4H onClick="cardKeeper.moveCard(this.id)" src=../images/4H.jpg height=55px width=40px alt="Four of Hearts">
+            <img id=5H onClick="cardKeeper.moveCard(this.id)" src=../images/5H.jpg height=55px width=40px alt="Five of Hearts">
+            <img id=6H onClick="cardKeeper.moveCard(this.id)" src=../images/6H.jpg height=55px width=40px alt="Six of Hearts">
+            <img id=7H onClick="cardKeeper.moveCard(this.id)" src=../images/7H.jpg height=55px width=40px alt="Seven of Hearts">
+            <img id=8H onClick="cardKeeper.moveCard(this.id)" src=../images/8H.jpg height=55px width=40px alt="Eight of Hearts">
+            <img id=9H onClick="cardKeeper.moveCard(this.id)" src=../images/9H.jpg height=55px width=40px alt="Nine of Hearts">
+            <img id=TH onClick="cardKeeper.moveCard(this.id)" src=../images/TH.jpg height=55px width=40px alt="Ten of Hearts">
+            <img id=JH onClick="cardKeeper.moveCard(this.id)" src=../images/JH.jpg height=55px width=40px alt="Jack of Hearts">
+            <img id=QH onClick="cardKeeper.moveCard(this.id)" src=../images/QH.jpg height=55px width=40px alt="Queen of Hearts">
+            <img id=KH onClick="cardKeeper.moveCard(this.id)" src=../images/KH.jpg height=55px width=40px alt="King of Hearts">
+            </div>
+            <div class=clubs>
+            <img id=AC onClick="cardKeeper.moveCard(this.id)" src=../images/AC.jpg height=55px width=40px alt="Ace of Clubs">
+            <img id=2C onClick="cardKeeper.moveCard(this.id)" src=../images/2C.jpg height=55px width=40px alt="Two of Clubs">
+            <img id=3C onClick="cardKeeper.moveCard(this.id)" src=../images/3C.jpg height=55px width=40px alt="Three of Clubs">
+            <img id=4C onClick="cardKeeper.moveCard(this.id)" src=../images/4C.jpg height=55px width=40px alt="Four of Clubs">
+            <img id=5C onClick="cardKeeper.moveCard(this.id)" src=../images/5C.jpg height=55px width=40px alt="Five of Clubs">
+            <img id=6C onClick="cardKeeper.moveCard(this.id)" src=../images/6C.jpg height=55px width=40px alt="Six of Clubs">
+            <img id=7C onClick="cardKeeper.moveCard(this.id)" src=../images/7C.jpg height=55px width=40px alt="Seven of Clubs">
+            <img id=8C onClick="cardKeeper.moveCard(this.id)" src=../images/8C.jpg height=55px width=40px alt="Eight of Clubs">
+            <img id=9C onClick="cardKeeper.moveCard(this.id)" src=../images/9C.jpg height=55px width=40px alt="Nine of Clubs">
+            <img id=TC onClick="cardKeeper.moveCard(this.id)" src=../images/TC.jpg height=55px width=40px alt="Ten of Clubs">
+            <img id=JC onClick="cardKeeper.moveCard(this.id)" src=../images/JC.jpg height=55px width=40px alt="Jack of Clubs">
+            <img id=QC onClick="cardKeeper.moveCard(this.id)" src=../images/QC.jpg height=55px width=40px alt="Queen of Clubs">
+            <img id=KC onClick="cardKeeper.moveCard(this.id)" src=../images/KC.jpg height=55px width=40px alt="King of Clubs">
+            </div>
+        </div>
+        
+        <div class="table-wrapper">
+            <div class="player1-wrapper">
+                <p class="player-title text-align-right">Player 1</p>
+                <div class="player-card-wrapper float-right">
+                    <div id="p11" class="player-card" onclick="cardKeeper.chooseSpot(p11);"></div>
+                    <div id="p12" class="player-card" onclick="cardKeeper.chooseSpot(p12);"></div>
+                    <span id=player1></span>
+                </div>
+                
+            </div>
+        
+            <div class=pokerTable>
+                <div class="table-card-wrapper">
+                    <div class="player-card" id=flop1 onclick="cardKeeper.chooseSpot(flop1);"></div>
+                    <div class="player-card" id=flop2 onclick="cardKeeper.chooseSpot(flop2);"></div>
+                    <div class="player-card" id=flop3 onclick="cardKeeper.chooseSpot(flop3);"></div>
+                    <div class="player-card" id=turn onclick="cardKeeper.chooseSpot(turn);"></div>
+                    <div class="player-card" id=river onclick="cardKeeper.chooseSpot(river);"></div>
+                </div> 
+            </div>
+        
+            <div class="player2-wrapper">
+                <p class="player-title text-align-left">Player 2</p>
+                <div class="player-card-wrapper float-left">
+                    <div class="player-card" id=p21 onclick="cardKeeper.chooseSpot(p21);"></div>
+                    <div class="player-card" id=p22 onclick="cardKeeper.chooseSpot(p22);"></div>
+                    <span id=player2></span>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+    </main>
+</body>    
+    
+</html>
