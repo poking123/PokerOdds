@@ -1,0 +1,125 @@
+body {
+    background-image: url(../images/handmadepaper.png);
+    background-repeat: repeat;
+}
+
+.card-wrapper {
+    height: 220px;
+    width: 100%;
+}
+
+
+.spades {
+    height: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.diamonds {
+    height: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.hearts {
+    height: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.clubs {
+    height: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.table-wrapper {
+    display: block;
+    height: 350px;
+    width: 100%;
+}
+
+.pokerTable {
+    float: left;
+    background-image: url("../images/pokerTable2.jpg");
+    background-size: cover;
+    height: 55%;
+    width: 40%;
+    height: 190px;
+    width: 379px;
+    margin: 10%;
+}
+
+.player1-wrapper {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.player-title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.player-card-wrapper {
+    height: 75px;
+    width: 67%;
+}
+
+.table-card-wrapper {
+    margin-left: 10%;
+    width: 90%;
+    height: 75px;
+    margin-top: 60px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.player-card {
+    height: 55px;
+    width: 40px;
+    margin: 10px;
+    float: left;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.player2-wrapper {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.player1 {
+    position: relative;
+    margin-left:25%;
+    margin-top: 7%;
+    float: left;
+}
+
+.player2 {
+    position: relative;
+    margin-left:68%;
+    margin-top: 7%;
+}
+
+#p11 {
+    border-color: red;
+}
+
+
+
